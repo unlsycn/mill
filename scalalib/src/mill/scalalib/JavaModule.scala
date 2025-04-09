@@ -1495,6 +1495,7 @@ trait JavaModule
       super.prepareOffline(all)()
       resolvedIvyDeps()
       zincWorker().prepareOffline(all)()
+      classgraphWorkerModule().prepareOffline(all)()
       resolvedRunIvyDeps()
       Task.sequence(tasks)()
       ()
